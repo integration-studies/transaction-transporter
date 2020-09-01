@@ -1,0 +1,26 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: transaction-file-transporter
+spec:
+  schedule: "*/15 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: file-transporter
+              image: claudioed/transaction-file-transporter
+              env:
+                - name: FILE_PATH
+                  value: /tmp/transactions.txt
+                - name: BROKER_URL
+                  value: "100000"
+              volumeMounts:
+                - name: transaction-file-storage
+                  mountPath: /tmp
+          restartPolicy: OnFailure
+          volumes:
+            - name: transaction-file-storage
+              persistentVolumeClaim:
+                claimName: transaction-file-storage

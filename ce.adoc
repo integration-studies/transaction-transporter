@@ -1,0 +1,37 @@
+= Transaction Cloud Events Documentation
+Doc Writer <claudioed.oliveira@gmail.com>
+:reproducible:
+:listing-caption: Listing
+:source-highlighter: rouge
+:toc:
+
+This doc intents to be a simple document that explain transaction cloud events
+
+==
+
+
+
+== Type
+
+=== DOC
+
+DOC will be represented by **tech.claudioed.transaction.doc.create**
+
+=== TED
+
+TED will be represented by **tech.claudioed.transaction.ted.create**
+
+=== CARD
+
+CARD will be represented by **tech.claudioed.transaction.card.create**
+
+== Source
+
+All transaction that will be processed by this processor will be the **tech.claudioed.transaction.file** as a source.
+
+
+
+
+== Subject
+
+== Data
