@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a94a1d48-2fb3-465d-ac10-c5a86293800c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kubernetes/jobs.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/kubernetes/jobs.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/sender/sender.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/sender/sender.go" afterDir="false" />
+    <list default="true" id="a94a1d48-2fb3-465d-ac10-c5a86293800c" name="Default Changelist" comment="fixes">
       <change beforePath="$PROJECT_DIR$/pkg/transaction.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/transaction.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +52,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
@@ -71,6 +86,21 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -171,6 +201,10 @@
     <state width="1878" height="376" key="GridCell.Tab.1.right/-3360.112.1440.900/0.0.1920.1080/-1920.0.1920.1080@0.0.1920.1080" timestamp="1597784924475" />
     <state width="1878" height="376" key="GridCell.Tab.1.right/-3360.135.1440.877/0.0.1920.1080/-1920.23.1920.1057@0.0.1920.1080" timestamp="1597785025764" />
     <state width="1398" height="376" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1597959854543" />
+    <state x="4395" y="275" width="800" height="527" key="Vcs.Push.Dialog.v2" timestamp="1599042916701">
+      <screen x="3840" y="0" width="1920" height="1080" />
+    </state>
+    <state x="4395" y="275" width="800" height="527" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.0.1920.1080/3840.0.1920.1080@3840.0.1920.1080" timestamp="1599042916701" />
     <state width="960" height="540" key="XDebugger.FullValuePopup" timestamp="1597709196184">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

@@ -65,7 +65,7 @@ func eventType(t *Transaction) string {
 		return "tech.claudioed.transaction.doc.create"
 	} else if "TED" == t.Type {
 		return "tech.claudioed.transaction.ted.create"
-	} else if "DOC" == t.Type && "VISA" == t.SubType {
+	} else if "CARD" == t.Type && "VISA" == t.SubType {
 		return "tech.claudioed.transaction.card.visa.create"
 	} else {
 		return "tech.claudioed.transaction.card.master.create"
