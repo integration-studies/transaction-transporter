@@ -12,12 +12,13 @@ import (
 	"transaction-transporter/pkg/sender"
 )
 
-
 func main() {
 	ctx := cloudevents.ContextWithTarget(context.Background(), os.Getenv("BROKER_URL"))
+	log.Printf("BROKER_URL %v", os.Getenv("BROKER_URL"))
 	hp, _ := cloudevents.NewHTTP()
-	client,_ := cloudevents.NewClient(hp, cloudevents.WithTimeNow(), cloudevents.WithUUIDs())
-	sender := sender.NewSender(client,ctx)
+	client, _ := cloudevents.NewClient(hp, cloudevents.WithTimeNow(), cloudevents.WithUUIDs())
+
+	sender := sender.NewSender(client, ctx)
 	data, err := ioutil.ReadFile(os.Getenv("FILE_PATH"))
 	if err != nil {
 		log.Printf("Failed to read file %v", os.Getenv("FILE_PATH"))
@@ -25,12 +26,11 @@ func main() {
 	var wg sync.WaitGroup
 	for _, line := range strings.Split(string(data), "\n") {
 		wg.Add(1)
-		t,err := pkg.FromLine(line)
-		if err != nil{
+		t, err := pkg.FromLine(line)
+		if err != nil {
 			log.Printf("Failed to parse transaction %v", err)
 		}
-		log.Printf("Failed to read file %v", t)
-		go sender.Send(t,&wg)
+		go sender.Send(t, &wg)
 	}
 	wg.Wait()
 }

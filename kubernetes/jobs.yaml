@@ -11,11 +11,12 @@ spec:
           containers:
             - name: file-transporter
               image: claudioed/transaction-file-transporter
+              imagePullPolicy: Always
               env:
                 - name: FILE_PATH
                   value: /tmp/transactions.txt
                 - name: BROKER_URL
-                  value: "100000"
+                  value: "http://broker-ingress.knative-eventing.svc.cluster.local/integration/transactions-broker"
               volumeMounts:
                 - name: transaction-file-storage
                   mountPath: /tmp
